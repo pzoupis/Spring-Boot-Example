@@ -15,8 +15,7 @@ public class HelloWorld {
         return "Hello World";
     }
 
-    @RequestMapping(value = "/car/{id}",
-            method = GET)
+    @RequestMapping(value = "/car/{id}", method = GET)
     @ResponseBody
     public String test(@PathVariable("id") long id) {
         return "Car with id: " + id;
